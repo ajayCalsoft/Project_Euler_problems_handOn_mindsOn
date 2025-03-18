@@ -20,6 +20,7 @@ public class Problem313 {
     }
 
     // Placeholder function to calculate the number of possible grids for a given prime p
+    // for now this function is not implimented , this function will return all possible number of grids which can be solved p^2 moves , where p is prime number which is less than 10^6
     private static long getPossibleGrids(int p) {
         return 0;
     }
