@@ -44,13 +44,24 @@ public class Problem63 {
     }
 
     // Function to check if k^n is an n-digit number
-    private static boolean isNDigitNumber(int k, int n) {
-        double log10k = Math.log10(k);
-        double lowerBound = (n - 1) / (double) n;
-        double upperBound = 1;
 
-        return (log10k >= lowerBound && log10k < upperBound);
+
+    private static boolean isNDigitNumber(int k, int n) {
+
+        long num = pow(k,n);
+        String strValue=String.valueOf(num);
+        int strLength=strValue.length();
+        return (strLength==n);
     }
+
+    //alternate implimentation
+    //  private static boolean isNDigitNumber2(int k, int n) {
+    //     double log10k = Math.log10(k);
+    //     double lowerBound = (n - 1) / (double) n;
+    //     double upperBound = 1;
+
+    //     return (log10k >= lowerBound && log10k < upperBound);
+    // }
 
     // Function to compute k^n (for demonstration purposes)
     // private static long pow(int k, int n) {
